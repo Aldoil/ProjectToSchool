@@ -83,11 +83,11 @@ while answer != 'STOP':
 
 
         six = ((factorial(10)) / ((factorial(6)) * (factorial(10 - 6))))
-        print('Wszystkich możliwych kombinacji trafienia 6 liczb jest : ', int(six))
+        print('\nWszystkich możliwych kombinacji trafienia 6 liczb jest : ', int(six))
         print('Możliwych kombinacji trafienia 5 z 6 liczb : ', factorial(5-1))
         propability = six/factorial(5-1)
 
-        print('\nPrawdopodobieństwo trafienia conajmniej 5 cyfr wynosi: ',  round(1/propability,2)*100, '%')
+        print('Prawdopodobieństwo trafienia conajmniej 5 cyfr wynosi: ',  round(1/propability,2)*100, '%\n')
     if answer == '3':
 
         end_res = 0
