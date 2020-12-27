@@ -139,4 +139,3 @@ while option != '5':
         print('BLAD')
         continue
 
-#DODAC JUTRO ABY ZDANIA ZACZYNALY SIE Z DUZEJ I KONCZYLY KROPKA
