@@ -11,6 +11,7 @@ import random
 import re
 
 def random_int_list():
+    """ Creating list of random integers """
     rand = []
     for i in range(6):
         a = random.randint(1,10)
@@ -24,6 +25,7 @@ def random_int_list():
 
 
 def user_int_list():
+    """ Creating list of elements given by the user """
     user = []
     for i in range(6):
         while True:
@@ -104,7 +106,7 @@ while answer != 'STOP':
                 end_res += 1
             else:
                 continue
-        print(end_res)
+        print(end_res, '\n')
 
     if answer == '4':
         break

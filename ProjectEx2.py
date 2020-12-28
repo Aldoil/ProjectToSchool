@@ -9,11 +9,11 @@ Następnie program ma policzyć głosy. Z każdej „karty wyborczej” program 
 kandydat najbardziej preferowany otrzymuje od elektora 2 głosy, środkowy 1 a ostatni 0.
 Program ma policzyć ogólną liczbę głosów oddanych na danego kandydata oraz wyświetlić wynik wyborów po procedurze szeregowania preferencji.
 
-DLA CHĘTNYCH: stwórz raport wyborczy, który będzie tworzony przez program po zakończeniu procedury wyborczej, który będzie przechowywany w pliku .txt.
 """
 
 
 def elektor1():
+    """ Function to collect votes """
     print('Wskaż w skali od 1 do 3 (gdzie 3 oznacza najbardziej przypadł mi do gustu) jak mocno przypadł Ci do gustu : ')
     while True:
         vote1_1 = input('kandydat nr 1 - Adam Nowak: ')
@@ -37,12 +37,8 @@ def elektor1():
     return vote1_1, vote1_2, vote1_3
 
 
-
-
-
-
-
 def elektor2():
+    """ Function to collect votes """
     print('Wskaż w skali od 1 do 3 (gdzie 3 oznacza najbardziej przypadł mi do gustu) jak mocno przypadł Ci do gustu : ')
     while True:
         vote2_1 = input('kandydat nr 1 - Adam Nowak: ')
@@ -67,6 +63,7 @@ def elektor2():
 
 
 def elektor3():
+    """ Function to collect votes """
     print('Wskaż w skali od 1 do 3 (gdzie 3 oznacza najbardziej przypadł mi do gustu) jak mocno przypadł Ci do gustu : ')
     while True:
         vote3_1 = input('kandydat nr 1 - Adam Nowak: ')
@@ -90,6 +87,7 @@ def elektor3():
     return vote3_1, vote3_2, vote3_3
 
 def elektor4():
+    """ Function to collect votes """
     print('Wskaż w skali od 1 do 3 (gdzie 3 oznacza najbardziej przypadł mi do gustu) jak mocno przypadł Ci do gustu : ')
     while True:
         vote4_1 = input('kandydat nr 1 - Adam Nowak: ')
@@ -115,6 +113,7 @@ def elektor4():
 
 
 def elektor5():
+    """ Function to collect votes """
     print('Wskaż w skali od 1 do 3 (gdzie 3 oznacza najbardziej przypadł mi do gustu) jak mocno przypadł Ci do gustu : ')
     while True:
         vote5_1 = input('kandydat nr 1 - Adam Nowak: ')
@@ -140,6 +139,7 @@ def elektor5():
 
 
 def elektor6():
+    """ Function to collect votes """
     print('Wskaż w skali od 1 do 3 (gdzie 3 oznacza najbardziej przypadł mi do gustu) jak mocno przypadł Ci do gustu : ')
     while True:
         vote6_1 = input('kandydat nr 1 - Adam Nowak: ')
@@ -165,6 +165,7 @@ def elektor6():
 
 
 def elektor7():
+    """ Function to collect votes """
     print('Wskaż w skali od 1 do 3 (gdzie 3 oznacza najbardziej przypadł mi do gustu) jak mocno przypadł Ci do gustu : ')
     while True:
         vote7_1 = input('kandydat nr 1 - Adam Nowak: ')
@@ -190,6 +191,7 @@ def elektor7():
 
 
 def elektor8():
+    """ Function to collect votes """
     print('Wskaż w skali od 1 do 3 (gdzie 3 oznacza najbardziej przypadł mi do gustu) jak mocno przypadł Ci do gustu : ')
     while True:
         vote8_1 = input('kandydat nr 1 - Adam Nowak: ')
@@ -214,6 +216,7 @@ def elektor8():
 
 
 def elektor9():
+    """ Function to collect votes """
     print('Wskaż w skali od 1 do 3 (gdzie 3 oznacza najbardziej przypadł mi do gustu) jak mocno przypadł Ci do gustu : ')
     while True:
         vote9_1 = input('kandydat nr 1 - Adam Nowak: ')
@@ -239,6 +242,7 @@ def elektor9():
 
 
 def elektor10():
+    """ Function to collect votes """
     print('Wskaż w skali od 1 do 3 (gdzie 3 oznacza najbardziej przypadł mi do gustu) jak mocno przypadł Ci do gustu : ')
     while True:
         vote10_1 = input('kandydat nr 1 - Adam Nowak: ')

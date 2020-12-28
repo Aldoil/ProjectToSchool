@@ -10,6 +10,7 @@ Funkcja powinna zwracać współczynniki tego wielomianu.
 import re
 
 def generate_polynominal(n):
+    """ Generate n-degree polynomial """
     i = 0
     while i < n:
         polynominal = ''

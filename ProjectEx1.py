@@ -34,6 +34,7 @@ create_file.write('Przemówienie!\n')
 create_file.close()
 
 def make_sentence(variable):
+    """ Function for creating speech and saving to file """
     while variable == '1':
         file = open('speech.txt', 'a')
         sentence = (random.choice(column_1)).capitalize() + random.choice(column_2) + random.choice(column_3) + random.choice(column_4) + '.'
@@ -54,6 +55,7 @@ def make_sentence(variable):
 
 
 def show_speech(variable):
+    """ Function for read speech from the file """
     while variable == '2':
         file = open('speech.txt')
         for lines in file.readlines():
@@ -73,6 +75,7 @@ def show_speech(variable):
 
 
 def del_sentence(variable):
+    """ Function for delete chosen lines"""
     while variable == '3':
         file = open('speech.txt')
         res = []
@@ -101,6 +104,7 @@ def del_sentence(variable):
 
 
 def del_speech(variable):
+    """ Function for cleaning file """
     while variable == '4':
         file = open('speech.txt', 'w')
         file.write('Przemówienie!\n')
