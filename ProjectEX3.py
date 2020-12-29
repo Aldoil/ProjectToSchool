@@ -15,29 +15,31 @@ def generate_polynominal(n):
     while i < n:
         polynominal = ''
         res = []
-        for i in range(n):
-            a = input(f'Podaj wartość współczynnika {i+1}: ')
+        for i in range(n+1):
 
-            if  re.match('[0-9]', a):
-                n= str(n)
-                polynominal = polynominal + (a+'* x **'+n + ' + ')
+            a = input(f'Podaj wartość współczynnika {i+1}: ')
+            if  re.match('[0-9]', a) and n !=0:
+                polynominal = polynominal + (f'{a}* x **{n} + ' )
+            elif n == 0:
+                polynominal = polynominal + str(a)
             else:
                 while not re.match('[0-9]', a):
                     print('Podaj tylko liczbe calkowita!')
                     a = input(f'Podaj wartość współczynnika {i + 1}: ')
                     if re.match('[0-9]', a):
-                        polynominal = polynominal + (a+'* x **'+n + ' + ')
+                        polynominal = polynominal + (f'{a}* x **{n} + ' )
                         break
                     else:
                         continue
+            n -= 1
             res.append(a)
             i +=1
 
-        polynominal = polynominal[:(len(polynominal)-2)]
         print(f'Wilemoian n-tego stopnia ma postać: {polynominal}')
         return print('Współczynniki tego wielomianu to: ', res)
-
-generate_polynominal(10)
+power = input('Podaj stopień wielomianu: ')
+power= int(power)
+generate_polynominal(power)
 
 
 
